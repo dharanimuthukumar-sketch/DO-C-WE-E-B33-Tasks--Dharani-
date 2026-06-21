@@ -3,8 +3,8 @@ pipeline {
     
     environment {
         // Change these 3 variable fields to match your AWS environment profile
-        AWS_ACCOUNT_ID    = '123456789012'
-        AWS_DEFAULT_REGION= 'us-east-1'
+        AWS_ACCOUNT_ID    = '494873120327'
+        AWS_DEFAULT_REGION= 'ap-south-1'
         IMAGE_REPO_NAME   = 'my-jenkins-app'
         
         // Automated structural properties
