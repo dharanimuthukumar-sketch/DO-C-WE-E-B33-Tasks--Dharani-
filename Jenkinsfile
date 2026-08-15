@@ -24,13 +24,5 @@ pipeline {
             )
         }
     }
-}     /* Add this post block below your stages */
-    post {
-        always {
-            mail to: 'dharani.muthukumar@gmail.com',
-                 subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
-                 body: "Job '${env.JOB_NAME}' output:\n\nCheck logs at: ${env.BUILD_URL}"
-        }
-    }
-}
+}    
 
