@@ -20,8 +20,7 @@ pipeline {
                          Build Number: ${env.BUILD_NUMBER}
                          Status: ${currentBuild.currentResult}
                          Check Console Output here: ${env.BUILD_URL}console""",
-                attachLog: true
-            )
+                        )
         }
     }
 }    
