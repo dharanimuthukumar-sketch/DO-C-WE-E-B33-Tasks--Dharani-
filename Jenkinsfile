@@ -12,7 +12,7 @@ pipeline {
     
     post {
         always {
-            emailext (
+            mail (
                 to: 'dharani.muthukumar@gmail.com',
                 subject: "Jenkins Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
                 body: """Jenkins Build Details:
